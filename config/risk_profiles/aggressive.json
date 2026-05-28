@@ -1,0 +1,10 @@
+{
+    "max_usdt_per_trade": 200.0,
+    "max_portfolio_exposure": 2000.0,
+    "max_daily_loss_usd": 100.0,
+    "max_drawdown_pct": 0.20,
+    "fractional_kelly_coeff": 0.35,
+    "target_volatility": 0.025,
+    "allocation_mode": "conviction",
+    "max_single_weight": 0.40
+}

@@ -1,0 +1,43 @@
+name: Golden Bot CI/CD Pipeline
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v4
+      with: { python-version: '3.10' }
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt -r requirements_phase_*.txt
+        pip install pytest pytest-cov mypy bandit
+    - name: Static Analysis
+      run: |
+        mypy golden_bot --ignore-missing-imports || true
+        bandit -r golden_bot -f json -o bandit-report.json || true
+    - name: Run Tests
+      run: pytest golden_bot/tests/ --cov=golden_bot --cov-report=xml -v
+    - name: Upload Coverage
+      uses: codecov/codecov-action@v3
+      with: { file: ./coverage.xml }
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - uses: actions/checkout@v3
+    - name: Login to Registry
+      run: echo "${{ secrets.REGISTRY_TOKEN }}" | docker login -u ${{ secrets.REGISTRY_USER }} --password-stdin
+    - name: Build & Push
+      run: |
+        docker build -t golden-bot:${{ github.sha }} -f deploy/docker/base.Dockerfile .
+        docker tag golden-bot:${{ github.sha }} golden-bot:latest
+        docker push golden-bot:latest

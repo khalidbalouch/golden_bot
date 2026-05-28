@@ -1,0 +1,696 @@
+{"ts":"2026-05-10 23:49:23","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-10 23:49:23","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-10 23:49:23","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-10 23:49:23","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-10 23:49:23","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All critical secrets validated"}
+{"ts":"2026-05-10 23:49:23","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-10 23:49:23","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 WS Manager started: testnet/futures"}
+{"ts":"2026-05-10 23:49:23","lvl":"INFO","mod":"golden_bot.main","msg":"🔗 Connected to Binance testnet futures WebSocket"}
+{"ts":"2026-05-10 23:49:23","lvl":"INFO","mod":"WEB_MON","msg":"🌐 Web dashboard: http://localhost:8080/?token=cl_bot"}
+{"ts":"2026-05-10 23:49:23","lvl":"INFO","mod":"golden_bot.main","msg":"📊 Dashboards started: Terminal + Web (http://localhost:8080/?token=cl_bot)"}
+{"ts":"2026-05-10 23:49:23","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Bot started. Press Ctrl+C to stop."}
+{"ts":"2026-05-10 23:49:23","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-10 23:49:23","lvl":"ERROR","mod":"golden_bot.ws_manager","msg":"❌ WS connection error: TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'"}
+{"ts":"2026-05-10 23:49:23","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔄 Reconnecting in 1.0s..."}
+{"ts":"2026-05-10 23:49:23","lvl":"ERROR","mod":"asyncio","msg":"Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<Dashboard.start() done, defined at E:\binance\bot\Golden_Bot\golden_bot\utils\dashboard.py:272> exception=TypeError('unsupported format string passed to list.__format__')>"}
+Traceback (most recent call last):
+  File "E:\binance\bot\Golden_Bot\golden_bot\utils\dashboard.py", line 274, in start
+    with Live(self._build_display(), refresh_per_second=2, screen=False) as live:
+              ~~~~~~~~~~~~~~~~~~~^^
+  File "E:\binance\bot\Golden_Bot\golden_bot\utils\dashboard.py", line 220, in _build_display
+    f"  [bold]{sym:12s}[/bold] [dim]${cp:,.4f}[/dim]  [{r_color}]{r_val}[/{r_color}] "
+                                     ^^^^^^^^^
+TypeError: unsupported format string passed to list.__format__
+{"ts":"2026-05-10 23:49:24","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-10 23:49:24","lvl":"ERROR","mod":"golden_bot.ws_manager","msg":"❌ WS connection error: TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'"}
+{"ts":"2026-05-10 23:49:24","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔄 Reconnecting in 2.0s..."}
+{"ts":"2026-05-10 23:49:26","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-10 23:49:26","lvl":"ERROR","mod":"golden_bot.ws_manager","msg":"❌ WS connection error: TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'"}
+{"ts":"2026-05-10 23:49:26","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔄 Reconnecting in 4.0s..."}
+{"ts":"2026-05-10 23:49:30","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-10 23:49:30","lvl":"ERROR","mod":"golden_bot.ws_manager","msg":"❌ WS connection error: TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'"}
+{"ts":"2026-05-10 23:49:30","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔄 Reconnecting in 8.0s..."}
+{"ts":"2026-05-10 23:49:32","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:49:35","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:49:35","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:49:38","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-10 23:49:38","lvl":"ERROR","mod":"golden_bot.ws_manager","msg":"❌ WS connection error: TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'"}
+{"ts":"2026-05-10 23:49:38","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔄 Reconnecting in 16.0s..."}
+{"ts":"2026-05-10 23:49:41","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:49:42","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:49:42","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:49:42","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:49:42","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:49:54","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-10 23:49:54","lvl":"ERROR","mod":"golden_bot.ws_manager","msg":"❌ WS connection error: TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'"}
+{"ts":"2026-05-10 23:49:54","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔄 Reconnecting in 32.0s..."}
+{"ts":"2026-05-10 23:49:59","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:49:59","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:49:59","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:49:59","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:49:59","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:49:59","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:00","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:50:28","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-10 23:50:28","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-10 23:50:28","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-10 23:50:28","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-10 23:50:28","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All critical secrets validated"}
+{"ts":"2026-05-10 23:50:28","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-10 23:50:28","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 WS Manager started: testnet/futures"}
+{"ts":"2026-05-10 23:50:28","lvl":"INFO","mod":"golden_bot.main","msg":"🔗 Connected to Binance testnet futures WebSocket"}
+{"ts":"2026-05-10 23:50:28","lvl":"INFO","mod":"WEB_MON","msg":"🌐 Web dashboard: http://localhost:8080/?token=cl_bot"}
+{"ts":"2026-05-10 23:50:28","lvl":"INFO","mod":"golden_bot.main","msg":"📊 Dashboards started: Terminal + Web (http://localhost:8080/?token=cl_bot)"}
+{"ts":"2026-05-10 23:50:28","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Bot started. Press Ctrl+C to stop."}
+{"ts":"2026-05-10 23:50:28","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-10 23:50:28","lvl":"ERROR","mod":"golden_bot.ws_manager","msg":"❌ WS connection error: TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'"}
+{"ts":"2026-05-10 23:50:28","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔄 Reconnecting in 1.0s..."}
+{"ts":"2026-05-10 23:50:28","lvl":"ERROR","mod":"asyncio","msg":"Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<Dashboard.start() done, defined at E:\Binance\bot\Golden_Bot\golden_bot\utils\dashboard.py:272> exception=TypeError('unsupported format string passed to list.__format__')>"}
+Traceback (most recent call last):
+  File "E:\Binance\bot\Golden_Bot\golden_bot\utils\dashboard.py", line 274, in start
+    with Live(self._build_display(), refresh_per_second=2, screen=False) as live:
+              ~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Binance\bot\Golden_Bot\golden_bot\utils\dashboard.py", line 220, in _build_display
+    f"  [bold]{sym:12s}[/bold] [dim]${cp:,.4f}[/dim]  [{r_color}]{r_val}[/{r_color}] "
+                                     ^^^^^^^^^
+TypeError: unsupported format string passed to list.__format__
+{"ts":"2026-05-10 23:50:29","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-10 23:50:29","lvl":"ERROR","mod":"golden_bot.ws_manager","msg":"❌ WS connection error: TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'"}
+{"ts":"2026-05-10 23:50:29","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔄 Reconnecting in 2.0s..."}
+{"ts":"2026-05-10 23:50:31","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-10 23:50:31","lvl":"ERROR","mod":"golden_bot.ws_manager","msg":"❌ WS connection error: TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'"}
+{"ts":"2026-05-10 23:50:31","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔄 Reconnecting in 4.0s..."}
+{"ts":"2026-05-10 23:50:35","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-10 23:50:35","lvl":"ERROR","mod":"golden_bot.ws_manager","msg":"❌ WS connection error: TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'"}
+{"ts":"2026-05-10 23:50:35","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔄 Reconnecting in 8.0s..."}
+{"ts":"2026-05-10 23:50:43","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-10 23:50:43","lvl":"ERROR","mod":"golden_bot.ws_manager","msg":"❌ WS connection error: TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'"}
+{"ts":"2026-05-10 23:50:43","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔄 Reconnecting in 16.0s..."}
+{"ts":"2026-05-10 23:50:59","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-10 23:50:59","lvl":"ERROR","mod":"golden_bot.ws_manager","msg":"❌ WS connection error: TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'"}
+{"ts":"2026-05-10 23:50:59","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔄 Reconnecting in 32.0s..."}
+{"ts":"2026-05-10 23:51:03","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:03","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:03","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:04","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:04","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:04","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:04","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:04","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:04","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:04","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:04","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:05","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:06","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:06","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:12","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:12","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:12","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:12","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:12","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:13","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:16","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-10 23:51:31","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-10 23:51:31","lvl":"ERROR","mod":"golden_bot.ws_manager","msg":"❌ WS connection error: TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'"}
+{"ts":"2026-05-10 23:51:31","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔄 Reconnecting in 60s..."}
+{"ts":"2026-05-10 23:51:36","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:19","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-11 00:02:19","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 00:02:19","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-11 00:02:19","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-11 00:02:19","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All critical secrets validated"}
+{"ts":"2026-05-11 00:02:19","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 00:02:19","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 WS Manager started: testnet/futures"}
+{"ts":"2026-05-11 00:02:19","lvl":"INFO","mod":"golden_bot.main","msg":"🔗 Connected to Binance testnet futures WebSocket"}
+{"ts":"2026-05-11 00:02:19","lvl":"INFO","mod":"WEB_MON","msg":"🌐 Web dashboard: http://localhost:8080/?token=cl_bot"}
+{"ts":"2026-05-11 00:02:19","lvl":"INFO","mod":"golden_bot.main","msg":"📊 Dashboards started: Terminal + Web (http://localhost:8080/?token=cl_bot)"}
+{"ts":"2026-05-11 00:02:19","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Bot started. Press Ctrl+C to stop."}
+{"ts":"2026-05-11 00:02:19","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-11 00:02:21","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"✅ WebSocket connected"}
+{"ts":"2026-05-11 00:02:49","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:50","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:50","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:51","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:51","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:52","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:54","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:54","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:54","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:55","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:57","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:02:57","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received"}
+{"ts":"2026-05-11 00:06:16","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-11 00:06:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 00:06:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-11 00:06:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-11 00:06:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All critical secrets validated"}
+{"ts":"2026-05-11 00:06:16","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 00:06:16","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 00:06:16","lvl":"INFO","mod":"golden_bot.main","msg":"💰 Real balance loaded: $10000.00"}
+{"ts":"2026-05-11 00:06:16","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 WS Manager started: testnet/futures"}
+{"ts":"2026-05-11 00:06:16","lvl":"INFO","mod":"golden_bot.main","msg":"🔗 Connected to Binance testnet futures WebSocket"}
+{"ts":"2026-05-11 00:06:16","lvl":"INFO","mod":"WEB_MON","msg":"🌐 Web dashboard: http://localhost:8080/?token=cl_bot"}
+{"ts":"2026-05-11 00:06:16","lvl":"INFO","mod":"golden_bot.main","msg":"📊 Dashboards started: Terminal + Web"}
+{"ts":"2026-05-11 00:06:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Bot started. Press Ctrl+C to stop."}
+{"ts":"2026-05-11 00:06:16","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-11 00:06:18","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"✅ WebSocket connected"}
+{"ts":"2026-05-11 00:06:32","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received - shutting down..."}
+{"ts":"2026-05-11 00:06:32","lvl":"INFO","mod":"golden_bot.main","msg":"🛑 Stopping bot..."}
+{"ts":"2026-05-11 00:06:32","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Main loop cancelled"}
+{"ts":"2026-05-11 00:11:16","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-11 00:11:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 00:11:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-11 00:11:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-11 00:11:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All critical secrets validated"}
+{"ts":"2026-05-11 00:11:16","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 00:11:16","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 00:11:16","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 SSL Tip: Try updating certifi: pip install --upgrade certifi"}
+{"ts":"2026-05-11 00:11:16","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 Or run: python -m pip install --upgrade truststore"}
+{"ts":"2026-05-11 00:11:16","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 00:11:16","lvl":"INFO","mod":"golden_bot.main","msg":"💰 Real balance loaded: $10000.00"}
+{"ts":"2026-05-11 00:11:16","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 WS Manager started: testnet/futures"}
+{"ts":"2026-05-11 00:11:16","lvl":"INFO","mod":"golden_bot.main","msg":"🔗 Connected to Binance testnet futures WebSocket"}
+{"ts":"2026-05-11 00:11:16","lvl":"INFO","mod":"WEB_MON","msg":"🌐 Web dashboard: http://localhost:8080/?token=cl_bot"}
+{"ts":"2026-05-11 00:11:16","lvl":"INFO","mod":"golden_bot.main","msg":"📊 Dashboards started: Terminal + Web"}
+{"ts":"2026-05-11 00:11:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Bot started. Press Ctrl+C to stop."}
+{"ts":"2026-05-11 00:11:16","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-11 00:11:18","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"✅ WebSocket connected"}
+{"ts":"2026-05-11 00:11:23","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received - shutting down..."}
+{"ts":"2026-05-11 00:11:23","lvl":"INFO","mod":"golden_bot.main","msg":"🛑 Stopping bot..."}
+{"ts":"2026-05-11 00:11:23","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Main loop cancelled"}
+{"ts":"2026-05-11 00:53:09","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-11 00:53:09","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 00:53:09","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-11 00:53:09","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-11 00:53:09","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All critical secrets validated"}
+{"ts":"2026-05-11 00:53:09","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 00:53:10","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: TypeError: TCPConnector.__init__() got an unexpected keyword argument 'timeout'"}
+{"ts":"2026-05-11 00:53:10","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 Connection Tip: Check firewall; run 'Test-NetConnection testnet.binancefuture.com -Port 443'"}
+{"ts":"2026-05-11 00:53:10","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 00:53:10","lvl":"INFO","mod":"golden_bot.main","msg":"💰 Balance loaded: $10000.00"}
+{"ts":"2026-05-11 00:53:10","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 WS Manager started: testnet/futures"}
+{"ts":"2026-05-11 00:53:10","lvl":"INFO","mod":"golden_bot.main","msg":"🔗 Connected to Binance testnet futures WebSocket"}
+{"ts":"2026-05-11 00:53:10","lvl":"INFO","mod":"WEB_MON","msg":"🌐 Web dashboard: http://localhost:8080/?token=cl_bot"}
+{"ts":"2026-05-11 00:53:10","lvl":"INFO","mod":"golden_bot.main","msg":"📊 Dashboards started: Terminal + Web"}
+{"ts":"2026-05-11 00:53:10","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Bot started. Press Ctrl+C to stop."}
+{"ts":"2026-05-11 00:53:10","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-11 00:53:11","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"✅ WebSocket connected"}
+{"ts":"2026-05-11 00:53:40","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: TypeError: TCPConnector.__init__() got an unexpected keyword argument 'timeout'"}
+{"ts":"2026-05-11 00:53:40","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 Connection Tip: Check firewall; run 'Test-NetConnection testnet.binancefuture.com -Port 443'"}
+{"ts":"2026-05-11 00:53:40","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 00:53:55","lvl":"ERROR","mod":"asyncio","msg":"Future exception was never retrieved
+future: <Future finished exception=ConnectionClosedError(None, Close(code=1011, reason='keepalive ping timeout'), None)>"}
+Traceback (most recent call last):
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\site-packages\websockets\legacy\protocol.py", line 1302, in close_connection
+    await self.transfer_data_task
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\site-packages\websockets\legacy\protocol.py", line 959, in transfer_data
+    message = await self.read_message()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\site-packages\websockets\legacy\protocol.py", line 1029, in read_message
+    frame = await self.read_data_frame(max_size=self.max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\site-packages\websockets\legacy\protocol.py", line 1104, in read_data_frame
+    frame = await self.read_frame(max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\site-packages\websockets\legacy\protocol.py", line 1161, in read_frame
+    frame = await Frame.read(
+            ^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\site-packages\websockets\legacy\framing.py", line 68, in read
+    data = await reader(2)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\streams.py", line 769, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\streams.py", line 539, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+websockets.exceptions.ConnectionClosedError: sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+{"ts":"2026-05-11 00:53:55","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔌 WS connection closed: sent 1011 (unexpected error) keepalive ping timeout; no close frame received"}
+{"ts":"2026-05-11 00:53:55","lvl":"WARNING","mod":"golden_bot.ws_manager","msg":"🔄 Reconnecting in 1.0s..."}
+{"ts":"2026-05-11 00:54:10","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: TypeError: TCPConnector.__init__() got an unexpected keyword argument 'timeout'"}
+{"ts":"2026-05-11 00:54:10","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 Connection Tip: Check firewall; run 'Test-NetConnection testnet.binancefuture.com -Port 443'"}
+{"ts":"2026-05-11 00:54:10","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 00:54:40","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: TypeError: TCPConnector.__init__() got an unexpected keyword argument 'timeout'"}
+{"ts":"2026-05-11 00:54:40","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 Connection Tip: Check firewall; run 'Test-NetConnection testnet.binancefuture.com -Port 443'"}
+{"ts":"2026-05-11 00:54:40","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 00:55:10","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: TypeError: TCPConnector.__init__() got an unexpected keyword argument 'timeout'"}
+{"ts":"2026-05-11 00:55:10","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 Connection Tip: Check firewall; run 'Test-NetConnection testnet.binancefuture.com -Port 443'"}
+{"ts":"2026-05-11 00:55:10","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 00:55:16","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received - shutting down..."}
+{"ts":"2026-05-11 00:55:16","lvl":"INFO","mod":"golden_bot.main","msg":"🛑 Stopping bot..."}
+{"ts":"2026-05-11 00:55:16","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Main loop cancelled"}
+{"ts":"2026-05-11 00:55:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Tasks cancelled during shutdown (normal)"}
+{"ts":"2026-05-11 00:58:16","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-11 00:58:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 00:58:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-11 00:58:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-11 00:58:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All critical secrets validated"}
+{"ts":"2026-05-11 00:58:16","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 00:58:16","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 00:58:16","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 SSL Tip: Run 'pip install --upgrade certifi truststore' then 'python -m truststore.inject'"}
+{"ts":"2026-05-11 00:58:16","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 00:58:16","lvl":"INFO","mod":"golden_bot.main","msg":"💰 Balance loaded: $10000.00"}
+{"ts":"2026-05-11 00:58:16","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 WS Manager started: testnet/futures"}
+{"ts":"2026-05-11 00:58:16","lvl":"INFO","mod":"golden_bot.main","msg":"🔗 Connected to Binance testnet futures WebSocket"}
+{"ts":"2026-05-11 00:58:16","lvl":"INFO","mod":"WEB_MON","msg":"🌐 Web dashboard: http://localhost:8080/?token=cl_bot"}
+{"ts":"2026-05-11 00:58:16","lvl":"INFO","mod":"golden_bot.main","msg":"📊 Dashboards started: Terminal + Web"}
+{"ts":"2026-05-11 00:58:16","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Bot started. Press Ctrl+C to stop."}
+{"ts":"2026-05-11 00:58:16","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-11 00:58:17","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"✅ WebSocket connected"}
+{"ts":"2026-05-11 00:58:47","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 00:58:47","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 SSL Tip: Run 'pip install --upgrade certifi truststore' then 'python -m truststore.inject'"}
+{"ts":"2026-05-11 00:58:47","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 00:59:17","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 00:59:17","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 SSL Tip: Run 'pip install --upgrade certifi truststore' then 'python -m truststore.inject'"}
+{"ts":"2026-05-11 00:59:17","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 00:59:47","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 00:59:47","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 SSL Tip: Run 'pip install --upgrade certifi truststore' then 'python -m truststore.inject'"}
+{"ts":"2026-05-11 00:59:47","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 01:00:17","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:00:17","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 SSL Tip: Run 'pip install --upgrade certifi truststore' then 'python -m truststore.inject'"}
+{"ts":"2026-05-11 01:00:17","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 01:00:47","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:00:47","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 SSL Tip: Run 'pip install --upgrade certifi truststore' then 'python -m truststore.inject'"}
+{"ts":"2026-05-11 01:00:47","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 01:01:12","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received - shutting down..."}
+{"ts":"2026-05-11 01:01:12","lvl":"INFO","mod":"golden_bot.main","msg":"🛑 Stopping bot..."}
+{"ts":"2026-05-11 01:01:12","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Main loop cancelled"}
+{"ts":"2026-05-11 01:01:12","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Tasks cancelled during shutdown (normal)"}
+{"ts":"2026-05-11 01:01:17","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-11 01:01:17","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:01:17","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-11 01:01:17","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-11 01:01:17","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All critical secrets validated"}
+{"ts":"2026-05-11 01:01:17","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:01:17","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:01:17","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:01:17","lvl":"INFO","mod":"golden_bot.main","msg":"💰 Balance loaded: $10000.00"}
+{"ts":"2026-05-11 01:01:17","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 WS Manager started: testnet/futures"}
+{"ts":"2026-05-11 01:01:17","lvl":"INFO","mod":"golden_bot.main","msg":"🔗 Connected to Binance testnet futures WebSocket"}
+{"ts":"2026-05-11 01:01:17","lvl":"INFO","mod":"WEB_MON","msg":"🌐 Web dashboard: http://localhost:8080/?token=cl_bot"}
+{"ts":"2026-05-11 01:01:17","lvl":"INFO","mod":"golden_bot.main","msg":"📊 Dashboards started: Terminal + Web"}
+{"ts":"2026-05-11 01:01:17","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Bot started. Press Ctrl+C to stop."}
+{"ts":"2026-05-11 01:01:17","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-11 01:01:18","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"✅ WebSocket connected"}
+{"ts":"2026-05-11 01:01:47","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:01:47","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:02:17","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:02:17","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:02:26","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received - shutting down..."}
+{"ts":"2026-05-11 01:02:26","lvl":"INFO","mod":"golden_bot.main","msg":"🛑 Stopping bot..."}
+{"ts":"2026-05-11 01:02:26","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Tasks cancelled during shutdown (normal)"}
+{"ts":"2026-05-11 01:02:26","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Main loop cancelled"}
+{"ts":"2026-05-11 01:02:26","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received - shutting down..."}
+{"ts":"2026-05-11 01:02:29","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-11 01:02:29","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:02:29","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-11 01:02:29","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-11 01:02:29","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All critical secrets validated"}
+{"ts":"2026-05-11 01:02:29","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:02:29","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:02:29","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:02:29","lvl":"INFO","mod":"golden_bot.main","msg":"💰 Balance loaded: $10000.00"}
+{"ts":"2026-05-11 01:02:29","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 WS Manager started: testnet/futures"}
+{"ts":"2026-05-11 01:02:29","lvl":"INFO","mod":"golden_bot.main","msg":"🔗 Connected to Binance testnet futures WebSocket"}
+{"ts":"2026-05-11 01:02:29","lvl":"INFO","mod":"WEB_MON","msg":"🌐 Web dashboard: http://localhost:8080/?token=cl_bot"}
+{"ts":"2026-05-11 01:02:29","lvl":"INFO","mod":"golden_bot.main","msg":"📊 Dashboards started: Terminal + Web"}
+{"ts":"2026-05-11 01:02:29","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Bot started. Press Ctrl+C to stop."}
+{"ts":"2026-05-11 01:02:29","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-11 01:02:30","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"✅ WebSocket connected"}
+{"ts":"2026-05-11 01:02:51","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received - shutting down..."}
+{"ts":"2026-05-11 01:02:51","lvl":"INFO","mod":"golden_bot.main","msg":"🛑 Stopping bot..."}
+{"ts":"2026-05-11 01:02:51","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Main loop cancelled"}
+{"ts":"2026-05-11 01:02:51","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Tasks cancelled during shutdown (normal)"}
+{"ts":"2026-05-11 01:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-11 01:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-11 01:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-11 01:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All critical secrets validated"}
+{"ts":"2026-05-11 01:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:02:56","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:02:56","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"💰 Balance loaded: $10000.00"}
+{"ts":"2026-05-11 01:02:56","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 WS Manager started: testnet/futures"}
+{"ts":"2026-05-11 01:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"🔗 Connected to Binance testnet futures WebSocket"}
+{"ts":"2026-05-11 01:02:56","lvl":"INFO","mod":"WEB_MON","msg":"🌐 Web dashboard: http://localhost:8080/?token=cl_bot"}
+{"ts":"2026-05-11 01:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"📊 Dashboards started: Terminal + Web"}
+{"ts":"2026-05-11 01:02:56","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Bot started. Press Ctrl+C to stop."}
+{"ts":"2026-05-11 01:02:56","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-11 01:02:57","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"✅ WebSocket connected"}
+{"ts":"2026-05-11 01:03:26","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:03:26","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:03:56","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:03:56","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:04:26","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:04:26","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:04:56","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:04:56","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:05:26","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:05:26","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:05:56","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:05:56","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:06:27","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:06:27","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:06:57","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:06:57","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:07:18","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received - shutting down..."}
+{"ts":"2026-05-11 01:07:18","lvl":"INFO","mod":"golden_bot.main","msg":"🛑 Stopping bot..."}
+{"ts":"2026-05-11 01:07:18","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Tasks cancelled during shutdown (normal)"}
+{"ts":"2026-05-11 01:07:18","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Main loop cancelled"}
+{"ts":"2026-05-11 01:07:21","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-11 01:07:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:07:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-11 01:07:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-11 01:07:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All critical secrets validated"}
+{"ts":"2026-05-11 01:07:21","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:07:21","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:07:21","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:07:21","lvl":"INFO","mod":"golden_bot.main","msg":"💰 Balance loaded: $10000.00"}
+{"ts":"2026-05-11 01:07:21","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 WS Manager started: testnet/futures"}
+{"ts":"2026-05-11 01:07:21","lvl":"INFO","mod":"golden_bot.main","msg":"🔗 Connected to Binance testnet futures WebSocket"}
+{"ts":"2026-05-11 01:07:21","lvl":"INFO","mod":"WEB_MON","msg":"🌐 Web dashboard: http://localhost:8080/?token=cl_bot"}
+{"ts":"2026-05-11 01:07:21","lvl":"INFO","mod":"golden_bot.main","msg":"📊 Dashboards started: Terminal + Web"}
+{"ts":"2026-05-11 01:07:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Bot started. Press Ctrl+C to stop."}
+{"ts":"2026-05-11 01:07:21","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-11 01:07:22","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received - shutting down..."}
+{"ts":"2026-05-11 01:07:22","lvl":"INFO","mod":"golden_bot.main","msg":"🛑 Stopping bot..."}
+{"ts":"2026-05-11 01:07:22","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Tasks cancelled during shutdown (normal)"}
+{"ts":"2026-05-11 01:07:22","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Main loop cancelled"}
+{"ts":"2026-05-11 01:21:11","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-11 01:21:11","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:21:11","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-11 01:21:11","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-11 01:21:11","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All critical secrets validated"}
+{"ts":"2026-05-11 01:21:11","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:21:11","lvl":"INFO","mod":"golden_bot.main","msg":"✅ API keys validated: BINANCE_API_KEY (len=64), BINANCE_API_SECRET (len=64)"}
+{"ts":"2026-05-11 01:21:11","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:21:11","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 SSL Tip: Run 'pip install --upgrade certifi truststore' then 'python -m truststore.inject'"}
+{"ts":"2026-05-11 01:21:11","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 01:21:11","lvl":"INFO","mod":"golden_bot.main","msg":"💰 Balance loaded: $10000.00"}
+{"ts":"2026-05-11 01:21:11","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 WS Manager started: testnet/futures"}
+{"ts":"2026-05-11 01:21:11","lvl":"INFO","mod":"golden_bot.main","msg":"🔗 Connected to Binance testnet futures WebSocket"}
+{"ts":"2026-05-11 01:21:11","lvl":"INFO","mod":"WEB_MON","msg":"🌐 Web dashboard: http://localhost:8080/?token=cl_bot"}
+{"ts":"2026-05-11 01:21:11","lvl":"INFO","mod":"golden_bot.main","msg":"📊 Dashboards started: Terminal + Web"}
+{"ts":"2026-05-11 01:21:11","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Bot started. Press Ctrl+C to stop."}
+{"ts":"2026-05-11 01:21:11","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-11 01:21:12","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"✅ WebSocket connected"}
+{"ts":"2026-05-11 01:21:41","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:21:41","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 SSL Tip: Run 'pip install --upgrade certifi truststore' then 'python -m truststore.inject'"}
+{"ts":"2026-05-11 01:21:41","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 01:22:11","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Error fetching balance: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:22:11","lvl":"ERROR","mod":"golden_bot.main","msg":"💡 SSL Tip: Run 'pip install --upgrade certifi truststore' then 'python -m truststore.inject'"}
+{"ts":"2026-05-11 01:22:11","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00 (API fetch failed)"}
+{"ts":"2026-05-11 01:22:28","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received - shutting down..."}
+{"ts":"2026-05-11 01:22:28","lvl":"INFO","mod":"golden_bot.main","msg":"🛑 Stopping bot..."}
+{"ts":"2026-05-11 01:22:28","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Main loop cancelled"}
+{"ts":"2026-05-11 01:22:28","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Tasks cancelled during shutdown (normal)"}
+{"ts":"2026-05-11 01:22:28","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 received - shutting down..."}
+{"ts":"2026-05-11 01:24:21","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-11 01:24:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:24:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-11 01:24:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-11 01:24:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All secrets validated"}
+{"ts":"2026-05-11 01:24:21","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:24:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ API keys validated: BINANCE_API_KEY (len=64), BINANCE_API_SECRET (len=64)"}
+{"ts":"2026-05-11 01:24:21","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:24:21","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:24:21","lvl":"INFO","mod":"golden_bot.main","msg":"💰 Balance loaded: $10000.00"}
+{"ts":"2026-05-11 01:24:21","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 WS Manager started: testnet/futures"}
+{"ts":"2026-05-11 01:24:21","lvl":"INFO","mod":"golden_bot.main","msg":"🔗 Connected to Binance testnet futures WebSocket"}
+{"ts":"2026-05-11 01:24:21","lvl":"INFO","mod":"WEB_MON","msg":"🌐 Web dashboard: http://localhost:8080/?token=cl_bot"}
+{"ts":"2026-05-11 01:24:21","lvl":"INFO","mod":"golden_bot.main","msg":"📊 Dashboards started: Terminal + Web"}
+{"ts":"2026-05-11 01:24:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Bot started. Press Ctrl+C to stop."}
+{"ts":"2026-05-11 01:24:21","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-11 01:24:22","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"✅ WebSocket connected"}
+{"ts":"2026-05-11 01:24:52","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:24:52","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:25:22","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:25:22","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:25:52","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:25:52","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:26:22","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:26:22","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:26:52","lvl":"ERROR","mod":"golden_bot.main","msg":"❌ Balance fetch error: ClientConnectorDNSError: Cannot connect to host testnet.binancefuture.com:443 ssl:default [Could not contact DNS servers]"}
+{"ts":"2026-05-11 01:26:52","lvl":"WARNING","mod":"golden_bot.main","msg":"⚠️ Using demo balance $10,000.00"}
+{"ts":"2026-05-11 01:27:06","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 - shutting down..."}
+{"ts":"2026-05-11 01:27:06","lvl":"INFO","mod":"golden_bot.main","msg":"🛑 Stopping bot..."}
+{"ts":"2026-05-11 01:27:06","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Shutdown complete"}
+{"ts":"2026-05-11 01:27:06","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔌 Closing WebSocket..."}
+{"ts":"2026-05-11 01:27:06","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"✅ WebSocket closed"}
+{"ts":"2026-05-11 01:27:06","lvl":"ERROR","mod":"asyncio","msg":"unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-17' coro=<GoldenBotEngine.stop() done, defined at E:\binance\bot\Golden_Bot\golden_bot\main.py:272> exception=TypeError('Object of type AuditAction is not JSON serializable')>"}
+Traceback (most recent call last):
+  File "E:\binance\bot\Golden_Bot\golden_bot\main.py", line 295, in stop
+    symbol = data.get("s")
+    ^^^^^^^^^^^^^^^^^^
+  File "E:\binance\bot\Golden_Bot\golden_bot\core\security.py", line 265, in flush
+    f.write(json.dumps(e.__dict__) + "\n")
+            ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type AuditAction is not JSON serializable
+{"ts":"2026-05-11 01:27:38","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-11 01:27:38","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:27:38","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-11 01:27:38","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-11 01:27:38","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All secrets validated"}
+{"ts":"2026-05-11 01:27:38","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:27:38","lvl":"INFO","mod":"golden_bot.main","msg":"✅ API keys validated: BINANCE_API_KEY (len=64), BINANCE_API_SECRET (len=64)"}
+{"ts":"2026-05-11 01:27:38","lvl":"INFO","mod":"golden_bot.main","msg":"🌐 Fetching balance from https://testnet.binancefuture.com/fapi/v2/account"}
+{"ts":"2026-05-11 01:27:39","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Real balance fetched: $4376.64"}
+{"ts":"2026-05-11 01:27:39","lvl":"INFO","mod":"golden_bot.main","msg":"💰 Balance loaded: $4376.64"}
+{"ts":"2026-05-11 01:30:17","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 - shutting down..."}
+{"ts":"2026-05-11 01:30:17","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Shutdown complete"}
+{"ts":"2026-05-11 01:30:17","lvl":"ERROR","mod":"golden_bot.main","msg":"Unhandled: 'GoldenBotEngine' object has no attribute 'stop'"}
+Traceback (most recent call last):
+  File "E:\binance\bot\Golden_Bot\golden_bot\main.py", line 430, in <module>
+    try:
+    
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 712, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 683, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\windows_events.py", line 446, in select
+    self._poll(timeout)
+    ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\windows_events.py", line 775, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+  File "E:\binance\bot\Golden_Bot\golden_bot\main.py", line 373, in signal_handler
+    logger.info(f"⌨️  Signal {sig} - shutting down...")
+                    ^^^^^^^^^^^
+AttributeError: 'GoldenBotEngine' object has no attribute 'stop'
+{"ts":"2026-05-11 01:30:21","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-11 01:30:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:30:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_KEY' validated"}
+{"ts":"2026-05-11 01:30:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Secret 'BINANCE_API_SECRET' validated"}
+{"ts":"2026-05-11 01:30:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All secrets validated"}
+{"ts":"2026-05-11 01:30:21","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:30:21","lvl":"INFO","mod":"golden_bot.main","msg":"✅ API keys validated: BINANCE_API_KEY (len=64), BINANCE_API_SECRET (len=64)"}
+{"ts":"2026-05-11 01:30:21","lvl":"INFO","mod":"golden_bot.main","msg":"🌐 Fetching balance from https://testnet.binancefuture.com/fapi/v2/account"}
+{"ts":"2026-05-11 01:30:22","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Real balance fetched: $4376.64"}
+{"ts":"2026-05-11 01:30:22","lvl":"INFO","mod":"golden_bot.main","msg":"💰 Balance loaded: $4376.64"}
+{"ts":"2026-05-11 01:30:29","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 - shutting down..."}
+{"ts":"2026-05-11 01:30:29","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Shutdown complete"}
+{"ts":"2026-05-11 01:30:29","lvl":"ERROR","mod":"golden_bot.main","msg":"Unhandled: 'GoldenBotEngine' object has no attribute 'stop'"}
+Traceback (most recent call last):
+  File "E:\binance\bot\Golden_Bot\golden_bot\main.py", line 431, in <module>
+    asyncio.run(init())
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 712, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 683, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\windows_events.py", line 446, in select
+    self._poll(timeout)
+    ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\asyncio\windows_events.py", line 775, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+  File "E:\binance\bot\Golden_Bot\golden_bot\main.py", line 374, in signal_handler
+    asyncio.create_task(engine.stop())
+                        ^^^^^^^^^^^
+AttributeError: 'GoldenBotEngine' object has no attribute 'stop'
+{"ts":"2026-05-11 01:33:02","lvl":"INFO","mod":"golden_bot.main","msg":"🔐 Golden Bot starting..."}
+{"ts":"2026-05-11 01:33:02","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Config loaded: Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:33:02","lvl":"INFO","mod":"golden_bot.main","msg":"✅ All secrets validated"}
+{"ts":"2026-05-11 01:33:02","lvl":"INFO","mod":"golden_bot.main","msg":"🚀 Starting Golden Bot (testnet/futures)"}
+{"ts":"2026-05-11 01:33:02","lvl":"INFO","mod":"golden_bot.main","msg":"✅ API keys validated"}
+{"ts":"2026-05-11 01:33:03","lvl":"INFO","mod":"golden_bot.main","msg":"💰 Balance loaded: $4376.64"}
+{"ts":"2026-05-11 01:33:03","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 WS Manager started: testnet/futures"}
+{"ts":"2026-05-11 01:33:03","lvl":"INFO","mod":"golden_bot.main","msg":"🔗 WebSocket connected"}
+{"ts":"2026-05-11 01:33:03","lvl":"INFO","mod":"WEB_MON","msg":"🌐 Web dashboard: http://localhost:8080/?token=cl_bot"}
+{"ts":"2026-05-11 01:33:03","lvl":"INFO","mod":"golden_bot.main","msg":"📊 Dashboards started"}
+{"ts":"2026-05-11 01:33:03","lvl":"INFO","mod":"golden_bot.main","msg":"✅ Bot started. Press Ctrl+C to stop."}
+{"ts":"2026-05-11 01:33:03","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔗 Connecting to WS: wss://stream.binancefuture.com/ws/btcusdt@ticker/ethusdt@ticker"}
+{"ts":"2026-05-11 01:33:04","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"✅ WebSocket connected"}
+{"ts":"2026-05-11 01:33:34","lvl":"INFO","mod":"golden_bot.main","msg":"🔄 Balance refreshed: $4376.64"}
+{"ts":"2026-05-11 01:34:05","lvl":"INFO","mod":"golden_bot.main","msg":"🔄 Balance refreshed: $4376.64"}
+{"ts":"2026-05-11 01:34:36","lvl":"INFO","mod":"golden_bot.main","msg":"🔄 Balance refreshed: $4376.64"}
+{"ts":"2026-05-11 01:35:07","lvl":"INFO","mod":"golden_bot.main","msg":"🔄 Balance refreshed: $4376.64"}
+{"ts":"2026-05-11 01:35:37","lvl":"INFO","mod":"golden_bot.main","msg":"🔄 Balance refreshed: $4376.64"}
+{"ts":"2026-05-11 01:36:08","lvl":"INFO","mod":"golden_bot.main","msg":"🔄 Balance refreshed: $4376.64"}
+{"ts":"2026-05-11 01:36:39","lvl":"INFO","mod":"golden_bot.main","msg":"🔄 Balance refreshed: $4376.64"}
+{"ts":"2026-05-11 01:37:10","lvl":"INFO","mod":"golden_bot.main","msg":"🔄 Balance refreshed: $4376.64"}
+{"ts":"2026-05-11 01:37:41","lvl":"INFO","mod":"golden_bot.main","msg":"🔄 Balance refreshed: $4376.64"}
+{"ts":"2026-05-11 01:38:12","lvl":"INFO","mod":"golden_bot.main","msg":"🔄 Balance refreshed: $4376.64"}
+{"ts":"2026-05-11 01:38:43","lvl":"INFO","mod":"golden_bot.main","msg":"🔄 Balance refreshed: $4376.64"}
+{"ts":"2026-05-11 01:39:14","lvl":"INFO","mod":"golden_bot.main","msg":"🔄 Balance refreshed: $4376.64"}
+{"ts":"2026-05-11 01:39:19","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 - shutting down..."}
+{"ts":"2026-05-11 01:39:19","lvl":"INFO","mod":"golden_bot.main","msg":"🛑 Stopping bot..."}
+{"ts":"2026-05-11 01:39:19","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"🔌 Closing WebSocket..."}
+{"ts":"2026-05-11 01:39:20","lvl":"INFO","mod":"golden_bot.main","msg":"⌨️  Signal 2 - shutting down..."}
+{"ts":"2026-05-11 01:39:25","lvl":"INFO","mod":"golden_bot.ws_manager","msg":"✅ WebSocket closed"}
+{"ts":"2026-05-11 01:39:25","lvl":"ERROR","mod":"asyncio","msg":"unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-11' coro=<GoldenBotEngine.stop() done, defined at E:\binance\bot\Golden_Bot\golden_bot\main.py:186> exception=TypeError('Object of type AuditAction is not JSON serializable')>"}
+Traceback (most recent call last):
+  File "E:\binance\bot\Golden_Bot\golden_bot\main.py", line 197, in stop
+    self.audit.flush()
+    ~~~~~~~~~~~~~~~~^^
+  File "E:\binance\bot\Golden_Bot\golden_bot\core\security.py", line 265, in flush
+    f.write(json.dumps(e.__dict__) + "\n")
+            ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Khalid\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type AuditAction is not JSON serializable

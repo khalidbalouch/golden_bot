@@ -1,0 +1,8 @@
+{
+    "atr_multiplier": 1.5,
+    "max_duration_min": 90,
+    "edge_half_life_min": 45,
+    "tp_allocation": [0.6, 0.4],
+    "scale_conviction_delta": 0.15,
+    "max_scale_count": 2
+}

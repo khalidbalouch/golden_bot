@@ -1,0 +1,71 @@
+# Docker Swarm Configuration for High Availability
+version: '3.8'
+services:
+  engine:
+    image: golden-bot:latest
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - POSTGRES_URL=postgresql://botuser:pass@postgres:5432/goldenbot
+      - MODE=production
+    secrets:
+      - api_key
+    ports:
+      - "8080:8080"
+    networks:
+      - golden-net
+    depends_on:
+      - redis
+      - postgres
+
+  worker:
+    image: golden-bot:latest
+    deploy:
+      replicas: 4
+      restart_policy:
+        condition: on-failure
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - MODE=worker
+    networks:
+      - golden-net
+
+  redis:
+    image: redis:7-alpine
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
+    networks:
+      - golden-net
+
+  postgres:
+    image: postgres:14-alpine
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
+    environment:
+      POSTGRES_DB: goldenbot
+      POSTGRES_USER: botuser
+      POSTGRES_PASSWORD: pass
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    networks:
+      - golden-net
+
+volumes:
+  pg_data:
+
+networks:
+  golden-net:
+    driver: overlay
+
+secrets:
+  api_key:
+    file: ./secrets/api_key.txt

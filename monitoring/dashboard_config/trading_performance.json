@@ -1,0 +1,16 @@
+{
+  "dashboard": {
+    "id": null,
+    "uid": "trading_perf",
+    "title": "Golden Bot — Trading Performance",
+    "timezone": "browser",
+    "panels": [
+      {"title": "Balance", "type": "stat", "targets": [{"expr": "golden_bot_balance"}]},
+      {"title": "Daily PnL", "type": "timeseries", "targets": [{"expr": "golden_bot_daily_pnl"}]},
+      {"title": "Drawdown %", "type": "timeseries", "targets": [{"expr": "golden_bot_drawdown_pct"}]},
+      {"title": "Win Rate", "type": "gauge", "targets": [{"expr": "golden_bot_win_rate"}]},
+      {"title": "Active Trades", "type": "stat", "targets": [{"expr": "golden_bot_active_trades"}]}
+    ],
+    "refresh": "5s"
+  }
+}

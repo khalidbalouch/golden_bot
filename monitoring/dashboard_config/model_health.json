@@ -1,0 +1,11 @@
+{
+  "dashboard": {
+    "id": null,
+    "uid": "model_health",
+    "title": "Golden Bot — Model Health & Drift",
+    "panels": [
+      {"title": "Feature PSI", "type": "timeseries", "targets": [{"expr": "golden_bot_feature_psi"}]},
+      {"title": "Prediction Confidence", "type": "histogram", "targets": [{"expr": "golden_bot_model_confidence_bucket"}]}
+    ]
+  }
+}

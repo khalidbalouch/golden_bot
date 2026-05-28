@@ -1,0 +1,14 @@
+# Explicitly specify symbol
+python scripts/collect_data.py --symbol BTCUSDT --timeframe 15m --start 2024-01-01
+
+# Collect multiple symbols
+python scripts/collect_data.py -s ETHUSDT -t 15m
+python scripts/collect_data.py -s SOLUSDT -t 15m
+
+---------------------------------------------------------
+2. Fallback to .env (Default Behavior)
+If you don't provide --symbol, the script reads from your .env:
+# In .env:
+GOLDEN_BOT_WATCHLIST=BTCUSDT,ETHUSDT,SOLUSDT  # ← First item used: BTCUSDT
+GOLDEN_BOT_DEFAULT_TIMEFRAME=15m
+GOLDEN_BOT_ENV=testnet

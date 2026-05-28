@@ -1,0 +1,60 @@
+version: '3.8'
+services:
+  golden-bot-app:
+    build: 
+      context: ..
+      dockerfile: deploy/docker/base.Dockerfile
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - DATABASE_URL=postgresql://botuser:botpass@postgres:5432/goldenbot
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+    depends_on:
+      - redis
+      - postgres
+      - mlflow
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../logs:/app/logs
+      - ../data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:14-alpine
+    environment:
+      POSTGRES_DB: goldenbot
+      POSTGRES_USER: botuser
+      POSTGRES_PASSWORD: botpass
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.9.0
+    command: mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri sqlite:///mlflow.db --default-artifact-root /artifacts
+    volumes:
+      - mlflow_artifacts:/artifacts
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+
+volumes:
+  redis_data:
+  postgres_data:
+  mlflow_artifacts:

@@ -1,0 +1,10 @@
+cluster_name: golden-bot-ray
+max_workers: 10
+head_node:
+    instance_type: g4dn.xlarge # GPU node
+    setup_commands:
+        - pip install ray[default] torch
+worker_nodes:
+    instance_type: c5.2xlarge # CPU nodes for feature compute
+    setup_commands:
+        - pip install ray[default]
